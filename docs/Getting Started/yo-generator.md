@@ -142,7 +142,7 @@ For more information on how to set up your application's models, and the full do
 
 ## Routes & Views
 
-Usually, the easiest and clearest way to configure the logic for different routes (or views) in your application is to set up all the bindings single file, then put any common logic (or middleware) in another file.
+Usually, the easiest and clearest way to configure the logic for different routes (or views) in your application is to set up all the bindings in a single file, then put any common logic (or middleware) in another file.
 
 Then, the controller for each route you bind goes in its own file, organised similarly to the template that renders the view.
 
@@ -195,14 +195,14 @@ exports = module.exports = function(app) {
 #### Stepping through the route controller index
 
 - Load `keystone`, the `middleware.js` file (below), and create an `importer` for the current directory
-- Bind middleware (below) that
+- Bind middleware (below) that:
   - Initialises our basic error handlers
   - Initialises common local variables for our view templates
   - Retrieves flash messages from session before the view template is rendered
 - Tell Keystone how to handle `404` and `500` errors
 - Use the importer to load all the route controllers in the `/routes/views` directory
 - Export a method that binds the index route controller to `GET` requests on the root url `/`
-  - The `app` argument to this method our express app, so anything you can do binding routes in express, you can do here.
+  - The `app` argument to this method is our express app, so anything you can do binding routes in express, you can do here.
 - Additional route controllers that you add to your app should be added using `app.get`, `app.post` or `app.all` under your root controller.
 
 ### Common Route Middleware
@@ -289,7 +289,7 @@ Keystone includes support for 'flashing' messages to your visitors via session. 
 - info
 - success
 - warning
-- error
+- error.
 
 You can easily support other types of messages by updating your middleware and the .pug template that renders them (which we'll get to below).
 
@@ -343,7 +343,7 @@ html
   block js
 ```
 
-We're also have a mixin file `templates/mixins/flash-messages.pug` which we can add to include the `flash-messages`. Including mixins in your layout or view templates is a great way to keep your layout and view files clean, and re-use mixins across multiple views.
+We also have a mixin file `templates/mixins/flash-messages.pug` which we can add to include the `flash-messages`. Including mixins in your layout or view templates is a great way to keep your layout and view files clean, and re-use mixins across multiple views.
 
 **templates/mixins/flash-messages.pug**
 Our flash-messages mixin
@@ -380,7 +380,7 @@ mixin flash-message(message, type)
 
 KeystoneJS supports any [template language supported by express](expressjs.com/en/api.html).
 
-Use the `view engine` option to specify the template language you want to use.
+Use the `view engine` option in your `keystone.js` file to specify the template language you want to use.
 
 If you want to use a custom template engine, set the `custom engine` option as well. For instance, [ejs](embeddedjs.com/) is supported by express by default, but you might want to use [ejs.locals](github.com/RandomEtc/ejs-locals) as a template engine in order to benefit from get extensions.
 
@@ -443,7 +443,7 @@ exports = module.exports = function(done) {
 
 ## Starting Keystone
 
-Now you're ready to run your application, so execute the following in your project's main folder:
+Now you're ready to run your application, so execute the following in the command line in your project's main folder:
 
 `npm start`
 
