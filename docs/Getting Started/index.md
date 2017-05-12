@@ -2,11 +2,11 @@
 
 ## What is Keystone?
 
-Keystone is a CMS and web application framework built in node. It aims to make web development easy, with lots of work done for you, but without cutting down on how much you can customise your projects, allowing you to find the right balance for you between convention and customisation.
+Keystone is both a CMS and web application framework built in node. It aims to make web development easy, with lots of work done for you, but without cutting down on how much you can customise your projects -  allowing you to find the right balance for you between convention and customisation.
 
-It provides you with an easy connection to [mongoDB](https://www.mongodb.com/) It wraps both [mongoose](http://mongoosejs.com/) and [expresss](http://expressjs.com/), and provides more detailed database fields, with setups for common information patterns. Why? For the admin UI.
+It provides you with an easy connection to [mongoDB](https://www.mongodb.com/). It wraps in both [mongoose](http://mongoosejs.com/) and [expresss](http://expressjs.com/), and provides some handy, more detailed database fields, with setups for common information patterns. Why? For an easy to set up admin UI.
 
-Keystone makes it easy to bring your own view engine, structure your routes however you want, and modify your data structures to suit you, all while making doing so easier.
+Keystone enables you to bring your own view engine, structure your routes however you want, and modify your data structures to suit you, all while making doing so easier.
 
 
 ## Where to Begin
@@ -25,4 +25,4 @@ It will walk you through setting up the core files and settings to get keystone 
 
 ## Where To Next?
 
-Check out our [documentation](/documentation) if you want to get to understanding keystone more, and to explore the options it makes available. The [database configuration](/documentation/database) is a good place to start, as well as looking at the [initialisation options](/documentation/configuration) for the broadest customisation options available.
+Check out our [documentation](/documentation) if you want to get to understand keystone more, and to explore the options it makes available. The [database configuration](/documentation/database) is a good place to start if you want more depth.  Look at the [initialisation options](/documentation/configuration) for the broadest customisation options available.
