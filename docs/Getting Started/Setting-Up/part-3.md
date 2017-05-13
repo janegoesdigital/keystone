@@ -180,7 +180,7 @@ html(lang="en")
           Hope you're enjoying learning about keystone. We're close to some very dynamic cool things
 ```
 
-Check out [pugjs.org](pugjs.org) if you want to know more about pug.
+Check out [pugjs.org](https://pugjs.org/api/getting-started.html) if you want to know more about pug.
 
 Now, if we start our keystone app using `node keystone`, we should be able to visit the homepage and see it rendered!
 
