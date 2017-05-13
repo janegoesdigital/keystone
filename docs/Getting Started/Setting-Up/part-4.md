@@ -60,9 +60,9 @@ Your source tree should look like the following:
 |--keystone.js
 ```
 
-## Adding a `addEvent` view
+## Adding an `addEvent` view
 
-First we want our pair of new files to make up the route and the view, these should be `routes/views/addEvent` and `templates/views/addEvent.pug`.
+First we want our pair of new files to make up the route and the view, these should be `routes/views/addEvent.js` and `templates/views/addEvent.pug`.
 
 As we are not a pug tutorial, here's a page we prepared earlier:
 
@@ -115,7 +115,7 @@ so we should now have in our index:
 
 ```javascript
 exports = module.exports = function (app) {
-  app.get('/', routes.views.index)
+  app.get('/', routes.views.index);
   app.get('/add-event', routes.views.addEvent)
 };
 ```
@@ -127,7 +127,7 @@ With all this, we can start keystone, and go to our new route, and fill out the 
 
 We are going to create a new addition to our app, a handler for a post request, and then a request handler that can save the event information back to our database.
 
-As this endpoint is not a view, we are going to have to modify our routes object. We are going to create a new folder to importRoutes from, called `api`. Beofre this though, let us set up our `routes/index` for it.
+As this endpoint is not a view, we are going to have to modify our routes object. We are going to create a new folder to importRoutes from, called `api`. The `api` folder is created under the `routes` folder.  Before this though, let us set up our `routes/index` for it.
 
 First, we want to add a second property to our routes object to read in our api folder. Our routes object should end up looking like:
 
@@ -138,10 +138,10 @@ var routes = {
 };
 ```
 
-Second we are gloing to add our new route to our app. As this is not a get request, we need to let the app know. We use this by changing the verb.
+Second we are going to add our new route to our app. As this is not a get request, we need to let the app know. We use this by changing the verb.
 
 ```javascript
-app.post('/api/event', api.event.post);
+app.post('/api/event', routes.api.event.post);
 ```
 
 Next we can create our `routes/api/event/post` route. It's alright that the api folder only contains another folder. This structure helps us get the very readable route definition above.
