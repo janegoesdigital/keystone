@@ -227,7 +227,7 @@ Event.schema.pre('save', function (next) {
   return next();
 });
 
-Event.defaultColumns = 'displayName, email';
+Event.defaultColumns = 'id, name, startTime, cost';
 Event.register();
 ```
 
