@@ -14,7 +14,7 @@ Part 1 (this one here) will focus on installation and setting up our `keystone.j
 
 [Part 3](/getting-started/setting-up/part-3) will go through setting up routes with keystone to serve both database information as well as website pages.
 
-[Part 4](/getting-started/setting-up/part-4) will get a us a `POST` endpoint which we can use to post data to.
+[Part 4](/getting-started/setting-up/part-4) will get us a `POST` endpoint which we can use to post data to.
 
 Before we start, make sure you have [node](nodejs.org) and [mongo](https://www.mongodb.com/download-center?jmp=nav#community) installed.
 
