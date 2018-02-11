@@ -14,10 +14,10 @@ If you want to keep secret keys and configuration out of your codebase (especial
 
 There are four main types of options, listed below:
 
-- [Project Options](/documentation/configuration/project-options)
+- [Project Options](/documentation/configuration/project-options)  THIS LINK IS BROKEN
 - [Web Server Options](/documentation/configuration/web-server-options)
 - [Admin UI Options](/documentation/configuration/admin-ui-options)
-- [Database and User Auth Options](/documentation/configuration/database-and-user-auth-options)
+- [Database and User Auth Options](/documentation/configuration/database-and-user-auth-options) THIS LINK IS BROKEN
 
 ## Most Important Project Options
 
